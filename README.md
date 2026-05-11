@@ -41,7 +41,7 @@ Fixed policy, no adaptation → low reward, high queue length.
 - **Action** → Switch traffic light  
 - **Reward** → Maximize cumulative reward  
 - **Goal** → Learn optimal policy via AI algorithm (DQN / QL)
-- 
+  
 ![Description](figures/agent.png)
 
 ![Description](figures/ql.png)
