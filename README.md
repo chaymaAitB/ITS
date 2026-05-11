@@ -35,10 +35,20 @@ Fixed policy, no adaptation → low reward, high queue length.
 
 ---
 ## Q-learning
+### Agent Workflow
+
+- **State** → Detected vehicles + current traffic light phase  
+- **Action** → Switch traffic light  
+- **Reward** → Maximize cumulative reward  
+- **Goal** → Learn optimal policy via AI algorithm (DQN / QL)
+- 
 ![Description](figures/agent.png)
 
 ![Description](figures/ql.png)
- ![Description](figures/QL_results.png)
+
+## QL Performance
+
+![Description](figures/QL_results.png)
 
  === TRAINING SUMMARY QL ===
 
@@ -57,9 +67,10 @@ Cumulative reward reaches -15,000 to -20,000. Queue length fluctuates between 30
 #### Model Rchitecture
 ![Description](figures/dqn_arch.jpeg)
 
- ![Description](figures/DQN_results.png)
+## DQN Performance
+![Description](figures/DQN_results.png)
 
- - Episodes: 3
+- Episodes: 3
 - Steps per episode: 12,000
 - Total steps: 36,000
 - Training time: 2,562.48 sec (42.71 min)
