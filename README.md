@@ -19,9 +19,10 @@ results
 
 
 ## DQN
+
 ![Description](figures/dqn.png)
 
-
+#### Model Rchitecture
 ![Description](figures/dqn_arch.jpeg)
 
  ![Description](figures/DQN_results.png)
