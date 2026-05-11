@@ -1,11 +1,31 @@
 # ITS
 
-## Study Case
+## Study Case: Node 2 Traffic Control
 ![Description](figures/archroads.png)
+### Description
 
-NOde 2 ,  creating network and flow in SOMU
+This project implements and compares **DQN**, **QL (Q-Learning)**, and **Fixed Timing (FT)** for traffic signal control at **Node 2** in a synthetic traffic network.
 
-TRaining in Cityflow 
+### Network & Flow Configuration
+
+The traffic network consists of **6 nodes** with the following signalized movements at **Node 2**:
+
+| Movement | Direction |
+|----------|-----------|
+| Node 1→2 | Westbound (WB) |
+| Node 1→2 | Eastbound (EB) |
+| Node 2→5 | Southbound (SB) |
+| Node 2→5 | Northbound (NB) |
+| Node 2→3 | Westbound (WB) |
+| Node 2→3 | Eastbound (EB) |
+
+### Training Environment
+
+- **Simulator**: CityFlow
+- **Training Logic**: SUMO-compatible flow configuration
+- **Objective**: Minimize queue length and maximize cumulative reward
+
+> Training was conducted using CityFlow as the microscopic traffic simulator, with network and flow definitions adapted from SUMO test cases.
 
 ## Fixing Timing
  ![Description](figures/FT_results.png)
