@@ -1,4 +1,6 @@
-# ITS Study Case: Node 2 Traffic Control
+# ITS
+# 1. Study Case: Node 2 Traffic Control
+
 ![Description](figures/archroads.png)
 
 This project implements and compares **DQN**, **QL (Q-Learning)**, and **Fixed Timing (FT)** for traffic signal control at **Node 2** in a synthetic traffic network.
@@ -24,7 +26,7 @@ The traffic network consists of **6 nodes** with the following signalized moveme
 
 > Training was conducted using CityFlow as the microscopic traffic simulator, with network and flow definitions adapted from SUMO test cases.
 
-## Fixing Timing
+## 2. Fixing Timing
  ![Description](figures/FT_results.png)
 
 - Steps: 16,000
@@ -34,7 +36,7 @@ The traffic network consists of **6 nodes** with the following signalized moveme
 Fixed policy, no adaptation → low reward, high queue length.
 
 ---
-## Q-learning
+## 3. Q-learning
 ### Agent Workflow
 
 - **State** → Detected vehicles + current traffic light phase  
@@ -60,7 +62,7 @@ Fixed policy, no adaptation → low reward, high queue length.
 Cumulative reward reaches -15,000 to -20,000. Queue length fluctuates between 30–50.
 
 
-## DQN
+## 3. DQN
 ### DQN Neural Network Architecture
 
 ![Description](figures/dqn.png)
