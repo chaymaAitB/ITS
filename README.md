@@ -1,8 +1,5 @@
-# ITS
-
-## Study Case: Node 2 Traffic Control
+# ITS Study Case: Node 2 Traffic Control
 ![Description](figures/archroads.png)
-### Description
 
 This project implements and compares **DQN**, **QL (Q-Learning)**, and **Fixed Timing (FT)** for traffic signal control at **Node 2** in a synthetic traffic network.
 
