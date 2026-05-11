@@ -61,13 +61,22 @@ Cumulative reward reaches -15,000 to -20,000. Queue length fluctuates between 30
 
 
 ## DQN
+### DQN Neural Network Architecture
 
 ![Description](figures/dqn.png)
 
-#### Model Rchitecture
+- **Input Layer** → North-South queue length, East-West queue length, Signal phase
+- **Hidden Layers** → 2 hidden layers
+- **Activation** → ReLU (Rectified Linear Unit)
+- **Loss Function** → MSE (Mean Squared Error)
+- **Optimizer** → Adam (learning_rate = 0.001)
+- **Output Layer** → Action (switch traffic light)
+
+> **Note**: Simple 3-input architecture processes traffic state and outputs optimal signal switching decisions.
+
 ![Description](figures/dqn_arch.jpeg)
 
-## DQN Performance
+###  DQN Performance
 ![Description](figures/DQN_results.png)
 
 - Episodes: 3
