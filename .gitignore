@@ -1,0 +1,19 @@
+# Ignore environments
+Environment_CityFlow/
+config_FT.json 
+
+# Ignore trained models
+models/
+Environment_SUMO/FT.ipynb
+Environment_SUMO/traci6.QL.py
+# Ignore datasets
+data/
+roadnet.json
+run.py
+test.py
+# Optional: ignore generated plots/results
+plots/
+FT_results.png 
+# Python cache
+__pycache__/
+*.pyc
